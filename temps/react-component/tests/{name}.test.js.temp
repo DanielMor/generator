@@ -1,0 +1,13 @@
+import React from 'react';
+import { shallow } from 'enzyme';
+import {name} from '../{name}';
+
+describe('<{name} /> props', () => {
+    it('should render {name} with default props', () => {
+        const wrapper = shallow(
+            <{name} />
+        );
+
+        expect(wrapper).toMatchSnapshot();
+    });
+});

@@ -1,0 +1,17 @@
+import PropTypes from 'prop-types';
+
+export class {name} extends React.Component {
+    static propTypes = {};
+
+    static defaultProps = {};
+
+    render() {
+        return (
+            <div>
+                {name}
+            </div>
+        );
+    }
+}
+
+export default {name};
