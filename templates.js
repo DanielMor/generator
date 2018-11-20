@@ -5,7 +5,7 @@ module.exports = [{
   name: 'ReactComponent',
   cmd: 'rcc',
   isDirectory: true,
-  templates: 'temps/react-component',
+  templates: '../temps/react-component',
   args: (args) => {
     return args.length;
   },

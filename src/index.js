@@ -2,7 +2,6 @@ const fs = require('fs');
 const mkdirp = require('mkdirp');
 const minimist = require('minimist');
 const buildTemplate = require('string-template/compile');
-const getTemplates = require('./get-templates');
 const templates = require('../templates');
 
 function getFileName(file, data) {
@@ -52,7 +51,7 @@ function run(template, args) {
 
     const data = template.data(args);
 
-    generateFromDirectory(template.templates, data, data.folderName);
+    generateFromDirectory(__dirname + '/' + template.templates, data, data.folderName);
   } catch (e) {
     errorExit(`Cannot generating template: ${e.message}`);
   }
