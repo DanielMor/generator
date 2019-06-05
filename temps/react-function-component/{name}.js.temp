@@ -1,0 +1,16 @@
+import React from 'react';
+import { } from 'prop-types';
+
+const PropTypes = {};
+const DefaultProps = {};
+
+export const {name} = () => (
+    <div>
+        {name}
+    </div>
+);
+
+{name}.propTypes = PropTypes;
+{name}.defaultProps = DefaultProps;
+
+export default {name};

@@ -1,8 +1,0 @@
-import {name} from '../';
-
-describe('Export {name}', () => {
-    it('should export the {name} component', () => {
-        expect({name}).toBeDefined();
-        expect(typeof {name}).toBe('function');
-    });
-});
